@@ -1,0 +1,110 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "/week01/holygrail.html",
+                    "title": "Layout"
+                },
+                {
+                    "url": "/week01/media-query.html",
+                    "title": "Media-Query"
+                },
+                {
+                    "url": "https://codepen.io/oscar-moncada/pen/eYoJgpb",
+                    "title": "JS Pen"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "/week02/design.html",
+                    "title": "Desing"
+                },
+                {
+                    "url": "https://codepen.io/oscar-moncada/pen/RwOraQN",
+                    "title": "Hamburger"
+                },
+                {
+                    "url": "/week02/bom.html",
+                    "title": "BOM"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "LazyLoad"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "Rscset"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "LocalStorage"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/oscar-moncada/pen/gOygVpO",
+                    "title": "Pseudo-Classes"
+                },
+                {
+                    "url": "images/week4.webp",
+                    "title": "CSS Combinators"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "Tablebuild"
+                },
+                {
+                    "url": "Form-start/index.html",
+                    "title": "Form-exercise"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/oscar-moncada/pen/QWPMJja",
+                    "title": "Pseudo-elements"
+                },
+                {
+                    "url": "#",
+                    "title": "New Ward Members JSON"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Fetch API"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "3rd Party API"
+                }
+            ]
+        },
+        {
+            "week": "Week 6",
+            "links": [
+                {
+                    "url": "#",
+                    "title": "Future Content"
+                }
+            ]
+        }
+    ]
+}

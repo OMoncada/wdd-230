@@ -1,0 +1,1016 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    grid-template-rows: auto auto auto auto auto auto auto 120px;
+}
+
+header {
+    background: #023047;
+    padding: 1rem;
+    display: flex;
+    column-gap: 3rem;
+    color: #fff;
+    align-items: center;
+}
+
+header img {
+    width: 200px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    background-color: #000000;
+}
+
+nav .active {
+    background-color: #780000;
+}
+
+#hamburger-menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+}
+
+#hamburger-menu::before {
+    content: "☰";
+}
+
+#hamburger-menu.open::before {
+    content: "❌";
+}
+
+ul.navigation li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 0.50rem 3vw;
+}
+
+ul.navigation li:hover {
+    background-color: #780000;
+    cursor: pointer;
+}
+
+ul.navigation {
+    display: none;
+    padding-left: 0px;
+    margin: 0;
+}
+
+ul.navigation.open {
+    display: block;
+}
+
+#banner {
+    display: block;
+    background-color: #ffffcc;
+    padding: 10px;
+    text-align: center;
+}
+
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#banner>p:first-child {
+    width: 80%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Specific styling for home Page */
+
+#hero-box {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.book {
+    position: absolute;
+    top: 60%;
+    left: 40px;
+    /* Puedes ajustar este valor según tu preferencia */
+    transform: translateY(-50%);
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.book:hover {
+    transform: translateY(calc(-50% - 3px));
+}
+
+.hidden {
+    display: none;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#introduction {
+    color: white;
+    background-color: #780000;
+    padding: 2vw;
+    text-align: center;
+    margin-top: -10px;
+}
+
+#introduction p {
+    width: 75%;
+    margin: 0;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* Weather and events start */
+
+#weatherevents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.weather {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 12px;
+    border: 4px solid #780000;
+    border-radius: 15px;
+    padding: 1vw;
+    margin: 15px;
+    margin-right: 30px;
+    background-color: #023047;
+    color: #fff;
+}
+
+.weather h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.weather h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+#weather-icon {
+    width: 90px;
+    height: 90px;
+}
+
+#current-temp,
+#forecast-container span {
+    display: block;
+}
+
+#events {
+    grid-area: 1 / 1 / 2 / 3;
+    padding: 2vw;
+    text-align: left;
+}
+
+#events h2 {
+    margin: 0;
+    text-align: left;
+}
+
+.uevent {
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 2vw;
+    margin: 20px;
+    background-image: url('../images/rain.png');
+    color: #fff;
+    background-size: cover;
+}
+
+.uevent p {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    padding: 0.5rem;
+    margin-top: 0;
+}
+
+.uevent #uevent-title {
+    font-weight: bold;
+}
+
+#uevent-date {
+    font-style: italic;
+}
+
+#uevent-description {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    color: var(--green-medium);
+}
+
+#uevent-more {
+    font-style: italic;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.33);
+}
+
+#uevent-more:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Weather and events end */
+
+/* Spotligth Start */
+
+.advertisement-card {
+    display: inline-block;
+    width: calc(33.33% - 20px);
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    vertical-align: top;
+}
+
+.advertisement-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.membergold {
+    background-color: #FFD700;
+
+}
+
+.membersilver {
+    background-color: #C0C0C0;
+
+}
+
+/* Spotligth End */
+
+/* Specific styling for Discover Page */
+main.discoverPage {
+    padding: 0;
+}
+
+.sidebarContent {
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidebarContent h2 {
+    background-color: white;
+}
+
+span#visitMessage {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.sidebarContent a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border: 5px double black;
+    background-color: #023047;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.sidebarContent p {
+    line-height: 25px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.sidebarContent figure {
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+
+.sidebarContent img {
+    width: 100%;
+    height: auto;
+}
+
+.calendar {
+    text-align: center;
+}
+
+.calendar p {
+    line-height: 50px;
+}
+
+.lastVisit {
+    text-align: center;
+}
+
+.lastVisit p {
+    line-height: 50px;
+}
+
+.imageGallery picture {
+    margin: 0;
+    padding: 0;
+}
+
+/* Demographics styles */
+.demographics {
+    text-align: center;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+.count {
+    font-size: 1.5em;
+    color: #780000;
+    font-weight: bold;
+}
+
+.label {
+    padding: 10px;
+    font-size: 1.5em;
+    color: #000000;
+    font-size: 1em;
+}
+
+/* Statistics styles */
+.statistics-container {
+    display: flex;
+    height: 100%;
+}
+
+.statistics-sidebar {
+    flex: 0 0 33%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.imageGallery img {
+    border: 2px solid black;
+    max-width: 6000px;
+    height: auto;
+    margin-left: 80px;
+}
+
+/* Demographics styles */
+.demographics {
+    text-align: center;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+.count {
+    font-size: 1.5em;
+    color: #780000;
+    font-weight: bold;
+}
+
+.label {
+    padding: 10px;
+    font-size: 1.5em;
+    color: #000000;
+    font-size: 1em;
+}
+
+/* Statistics styles */
+.statistics-container {
+    display: flex;
+    height: 100%;
+}
+
+.statistics-sidebar {
+    flex: 0 0 33%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #023047;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+/* new
+
+/* Reset font size adjustments after orientation changes */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Apply a natural box layout model to all elements */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dark grey and pink theme */
+body {
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+}
+
+main {
+    padding: 15px;
+}
+
+.top-heading h1 {
+    display: block;
+    color: #0c0036;
+    margin: 0;
+    width: fit-content;
+    padding: 0 400px;
+    /* Adjust as needed */
+}
+
+/* Company spotlights styles */
+.company-spotlights-container {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 30px;
+    background-color: #bbb;
+    padding: 30px;
+    color: #000;
+}
+
+/* Card container styles */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.carrd {
+    flex: 1 0 calc(33.33% - 20px);
+    /* Adjust card width for large screens */
+    margin: 0 10px 30px;
+    /* Adjust margin as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #0c0036;
+    box-sizing: border-box;
+}
+
+.carrd h2 {
+    color: #a3a3a3;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.carrd h3 {
+    text-decoration: overline;
+    text-align: center;
+    padding: 10px;
+    color: #a3a3a3;
+}
+
+.carrd p {
+    color: #a3a3a3;
+    text-align: justify;
+}
+
+.card {
+    flex: 1 0 100%;
+    margin: 0 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #a3a3a3;
+    margin: 30px;
+}
+
+.card h2 {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.card h3 {
+    text-decoration: overline;
+    text-align: center;
+    padding: 10px;
+    color: #333;
+}
+
+.card p {
+    color: #1a1313;
+    text-align: justify;
+}
+
+.stuff {
+    margin: 1rem auto;
+}
+
+.card:nth-child(1),
+.card:nth-child(2) {
+    flex: 1 0 100%;
+}
+
+.card:nth-child(3) {
+    flex: 0 0 35%;
+}
+
+/* Form styles */
+form {
+    text-align: left;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 0.5rem 2%;
+}
+
+form legend {
+    color: #0c0036;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+    font-size: 20px;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: #000;
+    font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #0c0036;
+    border-radius: 4px;
+    padding: 0.75rem;
+    color: #000;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: 0.75rem;
+    color: #1a1313;
+}
+
+form label.top textarea {
+    width: 100%;
+    font-size: 1rem;
+    max-width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #0c0036;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.1);
+    resize: vertical;
+}
+
+form label.top textarea::placeholder {
+    color: #0c0036;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #000;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 100%;
+    transition: transform 0.3s;
+    /* Agregar transición de tamaño */
+}
+
+form input.submitBtn:hover {
+    transform: scale(1.1);
+    /* Aumentar el tamaño del botón al 110% */
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: rgb(27, 159, 40) solid 6px;
+}
+
+/* Membership styles */
+.design {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #ffffff;
+}
+
+main h1 {
+    color: #000;
+    background-color: #ffffff;
+}
+
+.membership h3 {
+    border-bottom: 2px solid rgb(255, 255, 255);
+    /* Agregar una línea por debajo del título */
+    padding-bottom: 1px;
+    display: inline-block;
+}
+
+main {
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 10%;
+}
+
+.cardfrontdetails p {
+    text-align: justify;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.flip-card {
+    margin: 5px;
+    width: 100%;
+    height: 250px;
+    perspective: 1000px;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    border: 1.5px solid #000000;
+    border-radius: 15px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+}
+
+.flip-card-front {
+    background: linear-gradient(rgba(2, 48, 71, 1), rgba(0, 0, 0, 0.8));
+    color: white;
+    background-size: cover;
+}
+
+.flip-card-back {
+    background-size: cover;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.cardtitle h3 {
+    font-size: 20px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.cardfrontdetails {
+    margin: 0 10%;
+    width: 80%;
+}
+
+.cardbackdetails {
+    margin: 60px 0px;
+}
+
+.price {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.btn {
+    background: #fff;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    /* Agregar transición a todas las propiedades con duración de 0.3 segundos */
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    /* Aumentar el tamaño del botón al 110% */
+    background-color: rgba(120, 0, 0, 1);
+    /* Cambiar el color de fondo */
+    color: #ffffff;
+    /* Cambiar el color del texto */
+}
+
+
+.form p {
+    margin-top: 50px;
+    font-size: 2em;
+    margin-bottom: 50px;
+    /* Cambia el tamaño de la fuente según tus preferencias */
+}
+
+/* CSS to align buttons to the left side of the page */
+#grid-view,
+#table-view {
+    margin-right: 10px;
+    /* Add some space between the buttons */
+}
+
+.grid-buttons {
+    margin-left: 20px;
+    /* Add margin to separate buttons from the content */
+}
+
+button {
+    padding: 5px;
+    background-color: #bed;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+#cardfrontdetails #directory-container {
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Adjust the gap between grid items */
+}
+
+.company-card {
+    margin: 10px;
+    flex: 1 1 300px;
+    /* Adjust the width of each grid item */
+    border: 1px solid #bed;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #999;
+}
+
+/* For table view (list view) */
+.member-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.member-table th,
+.member-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.member-table th {
+    background-color: #bed;
+    /* Header background color */
+}
+
+.member-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+    /* Even row background color */
+}
+
+.member-table tr:nth-child(odd) {
+    background-color: #bed;
+    /* Odd row background color */
+}
+
+/*Directory*/
+#chamberarticleheader {
+    margin: 1.5rem 1rem;
+}
+
+.directorygrid {
+    margin: 1rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+
+}
+
+.directorygrid section {
+    padding: 20px;
+    text-align: center;
+}
+
+.directorylist {
+    margin: 1rem 1rem;
+}
+
+.directorylist section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.directorylist section .directoryiteminfo {
+    margin-left: 2rem;
+    text-align: start;
+}
+
+.directorygrid section {
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(179, 179, 179, 1);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(179, 179, 179, 1);
+    box-shadow: 3px 3px 10px 0px rgba(179, 179, 179, 1);
+}
+
+.directorylist section {
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(179, 179, 179, 1);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(179, 179, 179, 1);
+    box-shadow: 3px 3px 10px 0px rgba(179, 179, 179, 1);
+}
+
+#togglesection {
+    display: flex;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(120, 0, 0);
+    border-radius: 5px;
+    width: 140px;
+}
+
+#togglesection img {
+    height: auto;
+    margin-right: 1rem;
+    width: 25px;
+}
+
+#togglesection img:hover {
+    transform: scale(1.1);
+}
+
+#mainarticle section {
+    border-radius: 5px;
+
+}
+
+#mainarticle section p {
+    color: #474747;
+}
+
+.membershiptag {
+    padding: .1rem;
+    border-radius: 4px;
+}
+
+.membergold {
+    background-color: #FFD700;
+
+}
+
+.membersilver {
+    background-color: #C0C0C0;
+
+}
+
+.memberbronze {
+    background-color: #e19447;
+    color: rgb(0, 0, 0);
+}
+
+/* Directory vanilla list*/
+.directorylistsimple {
+    margin: 1rem;
+}
+
+.directorylistsimple section {
+    border-radius: 0px !important;
+}
+
+.directorylistsimple section .directoryiteminfo {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+    align-items: center;
+}
+
+.directorylistsimple section:nth-child(odd) {
+    background-color: rgb(239, 239, 239);
+
+}
+
+.directorylistsimple section:nth-child(even) {
+    background-color: rgb(206, 206, 206);
+}
+
+.directorylistsimple .sectiontittle {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.directorylistsimple .sectiondir {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.directorylistsimple .sectionphone {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.directorylistsimple .sectionweblink {
+    grid-area: 1 / 4 / 2 / 5;
+    padding: 0 20px;
+}
+
+.directorylistsimple img,
+.directorylistsimple .membershiptag,
+.directorylistsimple .sectiondescription {
+    display: none;
+}
