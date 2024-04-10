@@ -81,7 +81,7 @@ ul.navigation.open {
 #banner {
     display: block;
     background-color: #ffffcc;
-    padding: 10px;
+    padding: 14px;
     text-align: center;
 }
 
@@ -217,7 +217,7 @@ ul.navigation.open {
     border-radius: 5px;
     padding: 2vw;
     margin: 20px;
-    background-image: url('../images/rain.png');
+    background-image: url('../images/rain.webp');
     color: #fff;
     background-size: cover;
 }
