@@ -923,6 +923,8 @@ button {
     border: 1px solid rgb(120, 0, 0);
     border-radius: 5px;
     width: 140px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 #togglesection img {
